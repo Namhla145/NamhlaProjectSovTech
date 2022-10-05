@@ -61,6 +61,7 @@ public class ContactUsPage  extends BaseSeleniumPage{
     }
 
     public ContactUsPage switchToIframe() {
+        waitUntilVisible(20,iframe);
         driver.switchTo().frame(iframe);
         return this;
     }
